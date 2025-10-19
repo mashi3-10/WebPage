@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1",
+    "title": "mashi3 ポートフォリオ",
+    "summary": "個人サイト（このサイト）",
+    "github": "https://github.com/yourname/mashi3",
+    "demo": "",
+    "tech": ["React","Vite","CSS"],
+    "tags": ["portfolio","personal"],
+    "screenshots": ["/assets/screenshots/portfolio-1.png"]
+  },
+  {
+    "id": "2",
+    "title": "サンプルプロジェクト",
+    "summary": "デモ用の説明",
+    "github": "",
+    "demo": "",
+    "tech": ["Node","Express"],
+    "tags": ["demo"]
+  }
+]

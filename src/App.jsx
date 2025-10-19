@@ -3,20 +3,30 @@ import { HashRouter, Routes, Route, Link } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home'
 import About from './pages/About'
+import Projects from './pages/Projects'
+import ProjectDetail from './pages/ProjectDetail'
+import Team from './pages/Team'
+import Changelog from './pages/Changelog'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 
 function App() {
   return (
     <HashRouter>
-      <nav style={{padding: '0.5rem', borderBottom: '1px solid #eee'}}>
-        <Link to="/">Home</Link>
-        {' | '}
-        <Link to="/about">About</Link>
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
+      <Header />
+      <main className="container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:id" element={<ProjectDetail />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/changelog" element={<Changelog />} />
+          <Route path="*" element={<div>404 — ページが見つかりません</div>} />
+        </Routes>
+      </main>
+      <Footer />
     </HashRouter>
   )
 }

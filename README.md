@@ -1,3 +1,18 @@
+# Project名: mashi3の備忘録
+
+## ページ概要
+### Home（/）
+- 簡潔な自己紹介、最新更新・注目プロジェクトへのリンク、SNSアイコン
+### 人物紹介（/about）
+- 経歴、スキルセット、プロフィール画像、ダウンロード可能な履歴書（任意）
+### 成果物（/projects）
+- プロジェクト一覧（カード表示）、各プロジェクトの詳細ページ（/projects/:id）
+- GitHubリンク、技術スタック、デモリンク、スクリーンショット、タグ/フィルタ
+### 仲間紹介（/team）
+- 協力者のプロフィール、役割、連絡先（リンク）
+### 更新ログ（/changelog）
+- リリースや更新履歴（日付・要約・関連PR/Issueリンク）
+
 
 # WebPage (Vite + React)
 
@@ -56,3 +71,10 @@ If you'd like, I can also:
 - Add a `.nvmrc` with the project's Node version.
 - Update `package.json` with a `homepage` field if you use a custom path.
 - Add CI checks (lint/test) before deploy.
+
+## コンテンツ編集（データ配置）
+
+- サイトのデータは `public/data/` 配下の JSON ファイルで管理します（例: `projects.json`, `team.json`, `changelog.json`）。
+- 画像や履歴書は `public/assets/` に配置してください（例: `public/assets/resume.pdf`）。
+- JSON ファイルはブラウザから fetch されるため、編集後の再ビルドは不要です（GH Pages 上でも同様）。
+

@@ -1,0 +1,4 @@
+[
+  { "date": "2025-10-19", "summary": "ルーティングを HashRouter に移行。pages フォルダを整理。", "link": "" },
+  { "date": "2025-10-13", "summary": "プロジェクト初期化（Vite + React）。", "link": "" }
+]
